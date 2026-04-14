@@ -1,0 +1,78 @@
+@layer base {
+  :root {
+    --color-primary: #2B3442;
+    --color-secondary: #4B6A9B;
+    --color-bg: #F6F8FF;
+    --color-blue: #0079FF;
+    --card-color: #FEFEFE;
+    --error-color: #F74646;
+  }
+
+  .dark {
+    --color-primary: white;
+    --color-secondary: white;
+    --color-bg: #141D2F;
+    --card-color: #1E2A47;
+  }
+}
+
+@layer components {
+  .custom-container {
+    max-width: 778px;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+
+  .heading-1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .heading-2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .heading-3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .heading-4 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .body-p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .custom-input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 22px 80px;
+    padding-right: 126px;
+  }
+
+  .custom-button {
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .custom-error {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--error-color);
+  }
+}

@@ -18,11 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${spaceMono.className} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${spaceMono.className} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-(--color-bg) gap-9.75 items-center justify-center">
+        {children}
+      </body>
     </html>
   );
 }

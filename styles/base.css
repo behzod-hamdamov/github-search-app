@@ -6,6 +6,8 @@
     --color-blue: #0079FF;
     --card-color: #FEFEFE;
     --error-color: #F74646;
+    --color-third: #697C9A;
+    --color-btn-hover: #222731;
   }
 
   .dark {
@@ -13,6 +15,8 @@
     --color-secondary: white;
     --color-bg: #141D2F;
     --card-color: #1E2A47;
+    --color-third: white;
+    --color-btn-hover: #90A4D4;
   }
 }
 

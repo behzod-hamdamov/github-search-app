@@ -8,9 +8,9 @@ import { getGithubUsers } from "../api/getGithubUser";
 
 import { useState } from "react";
 
-import { IGithubUser, IUserNotFound } from "@/types/IGithubUser";
+import { IGithubUser } from "@/types/IGithubUser";
 
-interface IProps {setUserData: React.Dispatch<React.SetStateAction<IGithubUser | IUserNotFound | null>>}
+interface IProps {setUserData: React.Dispatch<React.SetStateAction<IGithubUser | null>>}
 
 export const SearchInput = ({setUserData}: IProps) => {
   const [inputValue, setInputValue] = useState<string>("");

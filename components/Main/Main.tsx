@@ -2,17 +2,18 @@
 
 import { useState } from "react"
 
-import { SearchInput } from "./"
+import { SearchInput, UserDescription } from "./"
 
-import { IGithubUser, IUserNotFound } from "@/types/IGithubUser"
+import { IGithubUser } from "@/types/IGithubUser"
 
 export const Main = () => {
-  const [userData, setUserData] = useState<IGithubUser | IUserNotFound | null>(null)
+  const [userData, setUserData] = useState<IGithubUser | null>(null)
 
   return (
-    <main className="w-full flex flex-col gap-6">
-      <div className="custom-container">
+    <main className="w-full">
+      <div className="custom-container flex flex-col gap-6">
         <SearchInput setUserData={setUserData} />
+        {userData && <UserDescription userData={userData} />}
       </div>
     </main>
   )

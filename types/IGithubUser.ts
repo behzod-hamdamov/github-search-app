@@ -1,11 +1,6 @@
-export interface IUserNotFound {
-  message: string
-  documentation_url: string
-  status: string
-}
-
 export interface IGithubUser {
-  "avatar_url": string | null
+  "html_url": string
+  "avatar_url": string
   name: string | null
   login: string | null
   "created_at": string | null
